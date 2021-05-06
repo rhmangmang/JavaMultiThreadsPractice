@@ -1,3 +1,5 @@
+package thread.usage;
+
 /**
  * @Description "守护"具有陪伴的含义。因此，当进程中的非守护线程都消失时，守护线程将会自动销毁。该类将模拟守护线程。
  * @Author rhmangmang

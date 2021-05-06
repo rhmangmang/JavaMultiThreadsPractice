@@ -1,3 +1,5 @@
+package thread.usage;
+
 /**
  * @Description 主要是介绍 Thread.currentThread() 和 this（这个this等价于ThreadBasis的实例类，且其继承了Thread类） 的区别
  * @Author rhmangmang
@@ -7,18 +9,18 @@
 
 public class ThreadBasis extends Thread {
     public ThreadBasis () {
-        System.out.println("ThreadBasis begin---");
+        System.out.println("thread.usage.ThreadBasis begin---");
 
         // 因为这个构造函数是main函数调用的，所以当前线程是main
         System.out.println("Thread.currentThread().getName() = " + Thread.currentThread().getName());
         System.out.println("Thread.currentThread().isAlive() = " + Thread.currentThread().isAlive());
 
-        // this 表示的就是 ThreadBasis 这个线程。
+        // this 表示的就是 thread.usage.ThreadBasis 这个线程。
         // 此时，ThreadBasis这个线程还没被调度，处理构造的状态，所以alive是false
         System.out.println("this.getName() = " + this.getName());
         System.out.println("this.isAlive() = " + this.isAlive());
 
-        System.out.println("ThreadBasis end---");
+        System.out.println("thread.usage.ThreadBasis end---");
         System.out.println();
     }
 

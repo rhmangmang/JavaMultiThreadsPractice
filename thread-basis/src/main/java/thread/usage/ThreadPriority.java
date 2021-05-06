@@ -1,3 +1,5 @@
+package thread.usage;
+
 /**
  * @Description 默认情况下，所有线程的优先级都是5 {@link Thread#NORM_PRIORITY}
  * @Author rhmangmang
@@ -24,7 +26,7 @@ public class ThreadPriority {
 class Thread1 extends Thread {
     @Override
     public void run() {
-        System.out.println("Thread1's priority = " + this.getPriority());
+        System.out.println("thread.usage.Thread1's priority = " + this.getPriority());
 
         Thread2 thread2 = new Thread2();
         thread2.start();
@@ -34,14 +36,14 @@ class Thread1 extends Thread {
 class Thread2 extends Thread {
     @Override
     public void run() {
-        System.out.println("Thread2's priority = " + this.getPriority());
+        System.out.println("thread.usage.Thread2's priority = " + this.getPriority());
     }
 }
 
 class Thread3 extends Thread {
     @Override
     public void run() {
-        System.out.println("Thread3's priority = " + this.getPriority());
+        System.out.println("thread.usage.Thread3's priority = " + this.getPriority());
     }
 }
 
@@ -53,7 +55,7 @@ class Thread4 extends Thread {
     @Override
     public void run() {
         Thread.currentThread().setPriority(2);
-        System.out.println("Thread4's priority = " + this.getPriority() + " current Thread = " + Thread.currentThread().getName());
+        System.out.println("thread.usage.Thread4's priority = " + this.getPriority() + " current Thread = " + Thread.currentThread().getName());
         thread3.start();
     }
 }
