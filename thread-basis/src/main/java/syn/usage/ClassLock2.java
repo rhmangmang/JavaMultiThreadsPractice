@@ -1,7 +1,8 @@
 package syn.usage;
 
 /**
- * @Description TODO
+ * @Description Class锁可以对该类的所有实例对象起作用。可以看到以下新建了两个不同的Service2的实例对象，分别为 service1 service2。
+ *  这两个实例对象分别调用 printA 与 printB，得到的是同步的结果。
  * @Author rhmangmang
  * @Date 2021-05-06 11:35
  * @Version 1.0

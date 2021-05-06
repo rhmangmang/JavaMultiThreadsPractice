@@ -17,3 +17,6 @@
 
 #### 6. syn/usage/ClassLock1.java
     该示例说明了：实例对象的锁和Class锁不是同一个。因此，不会得到同步的结果。
+    
+#### 7. syn/usage/ClassLock2.java
+    该示例说明了：Class锁可以对该类的所有实例对象起作用
